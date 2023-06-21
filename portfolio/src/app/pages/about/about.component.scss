@@ -1,0 +1,33 @@
+img {
+  aspect-ratio: 2/3;
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  max-width: 300px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}

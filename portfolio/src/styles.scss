@@ -5,15 +5,25 @@
   overflow-y: auto;
 }
 
-p {
-  height: 50vh;
-}
-
 .fixed {
-  position: sticky;
+  // position: sticky;
   top: 0;
 }
 
-.spacer {
-  margin: 64px;
+.spacer-sm {
+  margin: 10px;
+}
+
+.spacer-lg {
+  margin: 50px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // min-height: 80vh;
+  margin-bottom: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }

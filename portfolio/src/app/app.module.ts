@@ -11,6 +11,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { ToolbarComponent } from './pages/toolbar/toolbar.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ToolbarComponent } from './pages/toolbar/toolbar.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

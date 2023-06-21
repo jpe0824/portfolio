@@ -1,1 +1,164 @@
-<p>projects works!</p>
+<!-- <div class="section-container">
+  <h2>Projects</h2>
+  <div class="project-container">
+    <div class="project-images">
+      <img
+        class="project-image"
+        [src]="project1Images[currentImageIndex1]"
+        alt="Project 1"
+        (click)="cycleProjectImage(1)"
+      />
+    </div>
+    <div class="project-description">
+      something
+    </div>
+  </div>
+</div> -->
+<div class="section-container">
+  <h2>Projects</h2>
+
+  <div class="card-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>OpenText</h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+          risus pretium quam vulputate dignissim suspendisse in est. Volutpat
+          consequat mauris nunc congue nisi vitae suscipit tellus mauris.
+          Tincidunt dui ut ornare lectus sit amet. Turpis massa sed elementum
+          tempus egestas. Et sollicitudin ac orci phasellus egestas tellus.
+          Dignissim suspendisse in est ante in. Volutpat diam ut venenatis
+          tellus in metus vulputate eu scelerisque. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada. Lorem ipsum dolor sit amet
+          consectetur. Malesuada nunc vel risus commodo viverra maecenas
+          accumsan lacus. Placerat orci nulla pellentesque dignissim enim sit
+          amet venenatis. Urna porttitor rhoncus dolor purus non enim praesent
+          elementum facilisis.
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="image-container">
+      <img
+        mat-card-image
+        class="project-image"
+        [src]="project1Images[currentImageIndex1]"
+        alt="Project 1"
+        (click)="cycleProjectImage(1)"
+      />
+    </mat-card>
+  </div>
+  <div class="card-container">
+    <mat-card class="image-container">
+      <img
+        mat-card-image
+        class="project-image"
+        [src]="project2Images[currentImageIndex2]"
+        alt="Project 2"
+        (click)="cycleProjectImage(2)"
+      />
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Mama Bear's Preschool</h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+          risus pretium quam vulputate dignissim suspendisse in est. Volutpat
+          consequat mauris nunc congue nisi vitae suscipit tellus mauris.
+          Tincidunt dui ut ornare lectus sit amet. Turpis massa sed elementum
+          tempus egestas. Et sollicitudin ac orci phasellus egestas tellus.
+          Dignissim suspendisse in est ante in. Volutpat diam ut venenatis
+          tellus in metus vulputate eu scelerisque. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada. Lorem ipsum dolor sit amet
+          consectetur. Malesuada nunc vel risus commodo viverra maecenas
+          accumsan lacus. Placerat orci nulla pellentesque dignissim enim sit
+          amet venenatis. Urna porttitor rhoncus dolor purus non enim praesent
+          elementum facilisis.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="card-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Reunion RSVP</h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+          risus pretium quam vulputate dignissim suspendisse in est. Volutpat
+          consequat mauris nunc congue nisi vitae suscipit tellus mauris.
+          Tincidunt dui ut ornare lectus sit amet. Turpis massa sed elementum
+          tempus egestas. Et sollicitudin ac orci phasellus egestas tellus.
+          Dignissim suspendisse in est ante in. Volutpat diam ut venenatis
+          tellus in metus vulputate eu scelerisque. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada. Lorem ipsum dolor sit amet
+          consectetur. Malesuada nunc vel risus commodo viverra maecenas
+          accumsan lacus. Placerat orci nulla pellentesque dignissim enim sit
+          amet venenatis. Urna porttitor rhoncus dolor purus non enim praesent
+          elementum facilisis.
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="image-container">
+      <img
+        mat-card-image
+        class="project-image"
+        [src]="project3Images[currentImageIndex3]"
+        alt="Project 3"
+        (click)="cycleProjectImage(3)"
+      />
+    </mat-card>
+  </div>
+  <div class="card-container">
+    <mat-card class="image-container">
+      <img
+        mat-card-image
+        class="project-image"
+        [src]="project4Images[currentImageIndex4]"
+        alt="Project 4"
+        (click)="cycleProjectImage(4)"
+      />
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Stock Tracker</h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+          risus pretium quam vulputate dignissim suspendisse in est. Volutpat
+          consequat mauris nunc congue nisi vitae suscipit tellus mauris.
+          Tincidunt dui ut ornare lectus sit amet. Turpis massa sed elementum
+          tempus egestas. Et sollicitudin ac orci phasellus egestas tellus.
+          Dignissim suspendisse in est ante in. Volutpat diam ut venenatis
+          tellus in metus vulputate eu scelerisque. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada. Lorem ipsum dolor sit amet
+          consectetur. Malesuada nunc vel risus commodo viverra maecenas
+          accumsan lacus. Placerat orci nulla pellentesque dignissim enim sit
+          amet venenatis. Urna porttitor rhoncus dolor purus non enim praesent
+          elementum facilisis.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

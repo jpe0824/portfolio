@@ -1,0 +1,21 @@
+img.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container > mat-card {
+  flex: 0 0 calc(50% - 10px); /* Adjust the width as needed */
+  margin: 5px;
+}
+
+@media (max-width: 767px) {
+  .card-container > mat-card {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+}
