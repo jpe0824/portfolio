@@ -11,7 +11,6 @@ export interface Tile {
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  @HostListener('window:resize', ['$event'])
   tiles: Tile[] = [
     { icon: 'fa-brands fa-python fa-2xl', text: 'Python', cols: 1, rows: 1 },
     {
@@ -60,6 +59,7 @@ export class AboutComponent {
     this.updateNumCols();
   }
 
+  @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.updateNumCols();
   }
