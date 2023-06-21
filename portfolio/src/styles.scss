@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+.main-content {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+p {
+  height: 50vh;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+}
+
+.spacer {
+  margin: 64px;
+}
