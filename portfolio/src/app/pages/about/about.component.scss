@@ -25,6 +25,11 @@ img {
   }
 }
 
+.about-card {
+  max-height: 675px;
+  overflow-y: auto;
+}
+
 @media (max-width: 767px) {
   .card-container {
     flex-direction: column;
