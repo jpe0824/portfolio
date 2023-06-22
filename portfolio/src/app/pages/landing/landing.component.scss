@@ -23,13 +23,16 @@
   .name {
     margin-left: 5vw;
     margin-right: 5vw;
+    div {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .container-flip {
+  display: flex;
   position: relative;
   height: 48px;
-  margin-left: 0.2em;
 }
 
 .container-flip span {
@@ -151,16 +154,31 @@
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 850px) {
   .title-container {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     .name {
       margin-left: 5vw;
     }
   }
   .container-flip {
     height: 30px;
-    margin-left: 0.2em;
+  }
+}
+
+@media (max-width: 390px) {
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    overflow-x: hidden;
+    .name {
+      margin-left: 5vw;
+    }
+  }
+  .container-flip {
+    height: 30px;
   }
 }
