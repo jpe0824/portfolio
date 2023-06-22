@@ -16,6 +16,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { MatInputModule } from '@angular/material/input';
     MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatChipsModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
