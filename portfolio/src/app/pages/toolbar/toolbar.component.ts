@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
+  isResumeActive: boolean = false;
   constructor(private scroller: ViewportScroller, private router: Router) {}
 
   ngOnInit(): void {
@@ -15,8 +16,17 @@ export class ToolbarComponent implements OnInit {
   }
 
   goTo(target: string): void {
-    document.getElementById(target)?.scrollIntoView({
-      behavior: 'smooth',
-    });
+    if (target === 'targetResume') {
+      this.isResumeActive = true;
+      return;
+    }
+
+    this.router.navigate(['/']);
+    this.isResumeActive = false;
+    setTimeout(() => {
+      document.getElementById(target)?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }, 100);
   }
 }

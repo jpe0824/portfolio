@@ -13,6 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { ToolbarComponent } from './pages/toolbar/toolbar.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ResumeComponent } from './pages/resume/resume.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ProjectsComponent,
     ContactComponent,
     ToolbarComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

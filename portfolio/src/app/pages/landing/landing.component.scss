@@ -1,5 +1,17 @@
-:host {
-  height: 100vh;
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+.bg {
+  background-color: mat.get-color-from-palette(mat.$blue-gray-palette, 900);
+  color: mat.get-color-from-palette(
+    mat.$blue-gray-palette,
+    50
+  ); // Use a contrasting text color
 }
 
 .title-container {
@@ -7,15 +19,20 @@
   flex-direction: column;
   justify-content: center;
   height: 80vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 0;
+  margin-right: 0vw;
+  .name {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
 
 .container-flip {
   display: inline-block;
   margin-top: 10px;
   position: relative;
-  height: 47px;
+  height: 48px;
+  margin-left: -75px;
 }
 
 .container-flip span {
@@ -155,8 +172,16 @@
 }
 
 @media (max-width: 767px) {
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    .name {
+      margin-left: 5vw;
+    }
+  }
   .container-flip {
     height: 30px;
+    margin-left: 0px;
   }
 }
 

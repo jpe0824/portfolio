@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './pages/landing/landing.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { ToolbarComponent } from './pages/toolbar/toolbar.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 const routes: Routes = [
   { path: '', component: ToolbarComponent },
-  // { path: 'about', component: AboutComponent },
+  { path: 'resume', component: ResumeComponent },
   // { path: 'projects', component: ProjectsComponent },
   // { path: 'contact', component: ContactComponent },
 ];

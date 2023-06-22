@@ -3,9 +3,18 @@
   <button mat-button (click)="goTo('targetAbout')">About</button>
   <button mat-button (click)="goTo('targetProjects')">Projects</button>
   <button mat-button (click)="goTo('targetContact')">Contact</button>
+  <button mat-button routerLink="/resume" (click)="goTo('targetResume')">
+    Resume
+  </button>
 </mat-toolbar>
-<span class="spacer"></span>
-<landing id="targetHome"></landing>
-<about id="targetAbout"></about>
-<projects id="targetProjects"></projects>
-<contact id="targetContact"></contact>
+<span class="spacer" *ngIf="!isResumeActive"></span>
+<landing id="targetHome" *ngIf="!isResumeActive"></landing>
+<about id="targetAbout" *ngIf="!isResumeActive"></about>
+<projects id="targetProjects" *ngIf="!isResumeActive"></projects>
+<contact id="targetContact" *ngIf="!isResumeActive"></contact>
+<resume *ngIf="isResumeActive"></resume>
+<footer>
+  <mat-toolbar color="primary">
+    <p>Designed and built by Jason Edman 2023</p>
+  </mat-toolbar>
+</footer>

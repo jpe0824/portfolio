@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+}
+
+mat-form-field {
+  width: 500px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+
+  a {
+    margin-left: 15px;
+  }
+}
