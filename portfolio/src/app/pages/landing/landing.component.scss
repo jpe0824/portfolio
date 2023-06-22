@@ -19,8 +19,6 @@
   flex-direction: column;
   justify-content: center;
   height: 80vh;
-  margin-left: 0;
-  margin-right: 0vw;
   .name {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -28,11 +26,9 @@
 }
 
 .container-flip {
-  display: inline-block;
-  margin-top: 10px;
   position: relative;
   height: 48px;
-  margin-left: -75px;
+  margin-left: 0.2em;
 }
 
 .container-flip span {
@@ -154,23 +150,6 @@
   width: 100%;
 }
 
-.flip::after {
-  content: "";
-  display: inline-block;
-  -webkit-transform: translateX(5px);
-  transform: translateX(5px);
-  background-size: cover;
-  width: 20px;
-  height: 20px;
-}
-
-@media (min-width: 394px) {
-  .flip::after {
-    width: 23px;
-    height: 23px;
-  }
-}
-
 @media (max-width: 767px) {
   .title-container {
     display: flex;
@@ -181,73 +160,6 @@
   }
   .container-flip {
     height: 30px;
-    margin-left: 0px;
+    margin-left: 0.2em;
   }
 }
-
-@media (min-width: 394px) {
-  .flip::after {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (min-width: 675px) {
-  .flip::after {
-    width: 34px;
-    height: 34px;
-  }
-}
-
-@media (min-width: 859px) {
-  .flip::after {
-    width: 37px;
-    height: 37px;
-  }
-}
-
-@media (min-width: 936px) {
-  .flip::after {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .flip::after {
-    width: 48px;
-    height: 48px;
-  }
-}
-
-// .flip-fermented::after {
-//   background-image: url("./../assets/emo-cutlery.png");
-// }
-
-// .flip-pluviophile::after {
-//   background-image: url("./../assets/emo-rain.png");
-// }
-
-// .flip-optimist::after {
-//   background-image: url("./../assets/emo-milk.png");
-// }
-
-// .flip-world::after {
-//   background-image: url("./../assets/emo-world.png");
-// }
-
-// .flip-cat::after {
-//   background-image: url("./../assets/emo-cat.png");
-// }
-
-// .flip-superhero::after {
-//   background-image: url("./../assets/emo-lightning.png");
-// }
-
-// .flip-snowboarder::after {
-//   background-image: url("./../assets/emo-snowboarder.png");
-// }
-
-// .flip-bookworm::after {
-//   background-image: url("./../assets/emo-books.png");
-// }
