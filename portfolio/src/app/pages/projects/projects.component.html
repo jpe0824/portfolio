@@ -60,7 +60,7 @@
         </mat-card-footer>
       </mat-card-content>
     </mat-card>
-    <mat-card class="image-container">
+    <!-- <mat-card class="image-container">
       <img
         mat-card-image
         class="project-image"
@@ -68,17 +68,30 @@
         alt="Project 1"
         (click)="cycleProjectImage(1)"
       />
+    </mat-card> -->
+    <mat-card class="image-container">
+      <div class="card-overlay" (click)="cycleProjectImage(1)">
+        <img
+          mat-card-image
+          class="project-image"
+          [src]="project1Images[currentImageIndex1]"
+          alt="Project 1"
+        />
+        <div class="overlay-text">Next</div>
+      </div>
     </mat-card>
   </div>
   <div class="card-container">
     <mat-card class="image-container">
-      <img
-        mat-card-image
-        class="project-image"
-        [src]="project2Images[currentImageIndex2]"
-        alt="Project 2"
-        (click)="cycleProjectImage(2)"
-      />
+      <div class="card-overlay" (click)="cycleProjectImage(2)">
+        <img
+          mat-card-image
+          class="project-image"
+          [src]="project2Images[currentImageIndex2]"
+          alt="Project 2"
+        />
+        <div class="overlay-text">Next</div>
+      </div>
     </mat-card>
     <mat-card>
       <mat-card-header>
@@ -201,13 +214,15 @@
       </mat-card-content>
     </mat-card>
     <mat-card class="image-container">
-      <img
-        mat-card-image
-        class="project-image"
-        [src]="project3Images[currentImageIndex3]"
-        alt="Project 3"
-        (click)="cycleProjectImage(3)"
-      />
+      <div class="card-overlay" (click)="cycleProjectImage(3)">
+        <img
+          mat-card-image
+          class="project-image"
+          [src]="project3Images[currentImageIndex3]"
+          alt="Project 3"
+        />
+        <div class="overlay-text">Next</div>
+      </div>
     </mat-card>
   </div>
   <div class="card-container">
@@ -217,7 +232,6 @@
         class="project-image"
         [src]="project4Images[currentImageIndex4]"
         alt="Project 4"
-        (click)="cycleProjectImage(4)"
       />
     </mat-card>
     <mat-card>

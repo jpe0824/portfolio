@@ -4,6 +4,43 @@ img.project-image {
   object-fit: contain;
 }
 
+.card-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.card-overlay:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* Adjust the opacity value as desired */
+  z-index: 1;
+}
+
+.card-overlay:hover .overlay-text {
+  display: block;
+}
+
+.overlay-text {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 2;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
