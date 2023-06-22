@@ -154,11 +154,12 @@
   width: 100%;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   .title-container {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-size: 14pt;
     .name {
       margin-left: 5vw;
     }
