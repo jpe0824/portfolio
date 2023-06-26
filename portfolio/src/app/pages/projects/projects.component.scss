@@ -4,6 +4,12 @@ img.project-image {
   object-fit: contain;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-overlay {
   position: relative;
   display: inline-block;
