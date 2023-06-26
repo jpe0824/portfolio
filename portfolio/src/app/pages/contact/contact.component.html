@@ -8,24 +8,38 @@
     method="POST"
   >
     <mat-form-field>
-      <mat-label>Enter your name</mat-label>
-      <input matInput placeholder="Bob" type="text" id="name" required />
+      <mat-label for="name">Enter your name</mat-label>
+      <input
+        matInput
+        placeholder="Bob"
+        type="text"
+        id="name"
+        name="name"
+        required
+      />
       <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('name') }}</mat-error> -->
     </mat-form-field>
     <mat-form-field>
-      <mat-label>Enter your email</mat-label>
+      <mat-label for="email">Enter your email</mat-label>
       <input
         matInput
         placeholder="bob@mail.com"
         type="email"
         id="email"
         required
+        name="email"
       />
       <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('email') }}</mat-error> -->
     </mat-form-field>
     <mat-form-field>
-      <mat-label>Message</mat-label>
-      <textarea matInput type="textarea" id="message" required></textarea>
+      <mat-label for="message">Message</mat-label>
+      <textarea
+        matInput
+        type="textarea"
+        id="message"
+        name="message"
+        required
+      ></textarea>
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit" id="submit">
       Submit
