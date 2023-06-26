@@ -9,17 +9,23 @@
   >
     <mat-form-field>
       <mat-label>Enter your name</mat-label>
-      <input matInput placeholder="Bob" required />
+      <input matInput placeholder="Bob" type="text" id="name" required />
       <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('name') }}</mat-error> -->
     </mat-form-field>
     <mat-form-field>
       <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="bob@mail.com" required />
+      <input
+        matInput
+        placeholder="bob@mail.com"
+        type="email"
+        id="email"
+        required
+      />
       <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('email') }}</mat-error> -->
     </mat-form-field>
     <mat-form-field>
       <mat-label>Message</mat-label>
-      <textarea matInput required=""></textarea>
+      <textarea matInput type="textarea" id="message" required></textarea>
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit" id="submit">
       Submit
