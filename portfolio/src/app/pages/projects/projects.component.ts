@@ -7,22 +7,22 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   project1Images: string[] = [
-    '../../../assets/images/pwm1.png',
-    '../../../assets/images/pwm2.png',
-    '../../../assets/images/pwm3.png',
-    '../../../assets/images/iman1.png',
-    '../../../assets/images/iman2.png',
+    '../../../assets/images/pwm1.webp',
+    '../../../assets/images/pwm2.webp',
+    '../../../assets/images/pwm3.webp',
+    '../../../assets/images/iman1.webp',
+    '../../../assets/images/iman2.webp',
   ];
   project2Images: string[] = [
-    '../../../assets/images/mbp.png',
-    '../../../assets/images/mbp2.png',
-    '../../../assets/images/mbp3.png',
+    '../../../assets/images/mbp.webp',
+    '../../../assets/images/mbp2.webp',
+    '../../../assets/images/mbp3.webp',
   ];
   project3Images: string[] = [
-    '../../../assets/images/reunion1.png',
-    '../../../assets/images/reunion2.png',
+    '../../../assets/images/reunion1.webp',
+    '../../../assets/images/reunion2.webp',
   ];
-  project4Images: string[] = ['../../../assets/images/tcker.png'];
+  project4Images: string[] = ['../../../assets/images/tcker.webp'];
   currentImageIndex1 = 0;
   currentImageIndex2 = 0;
   currentImageIndex3 = 0;
